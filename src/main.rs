@@ -24,7 +24,7 @@ fn solve(metadata: Metadata, libraries: &mut Vec<Library>) -> String {
         println!("{:?}", library);
     }
 
-    for day in 0..metadata.days + 1 {
+    for _ in 0..metadata.days + 1 {
         for lib in libraries.iter_mut() {
             match lib.state {
                 LibraryState::SignUpNotStarted => lib.start_signup(),
